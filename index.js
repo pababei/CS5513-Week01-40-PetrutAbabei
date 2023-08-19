@@ -9,6 +9,9 @@ let server = http.createServer(
     else if (req.url == "/dogs"){
       text = "There are some dogs as well...";
     }
+    else {
+      text = "Not sure what to show you...";
+    }
 
     res.writeHead(200, {"Content-Type": "text/plain"});
 
